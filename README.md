@@ -41,13 +41,13 @@ This layer depends on:
 
 ```
   URI: git://git.openembedded.org/bitbake
-  branch: krogoth
+  branch: zeus
 ```
 
 ```
   URI: git://git.openembedded.org/openembedded-core
   layers: meta
-  branch: krogoth
+  branch: zeus
 ```
 
 # Patches
@@ -115,7 +115,7 @@ rootfs and the `/dev/sda2` partition as the read-write persistent state.
 root=/dev/sda1 rootrw=/dev/sda2 init=/bin/sh
 ```
 
-The same as before but it now starts `/bin/sh` instead of `/sbin/init`.
+The same as before but it now starts `/init` instead of `/sbin/init`.
 
 ### Example without initrd:
 
